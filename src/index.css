@@ -1,0 +1,151 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, system-ui, sans-serif;
+  line-height: 1.5;
+  /* font-weight: 400; */
+
+  color-scheme: light dark;
+  color: rgba(61, 61, 61, 0.87);
+  background-color: #9c9c9c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+canvas {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-style: dotted;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+html,
+body,
+#root
+{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+h1 {
+  z-index: 1;
+  font-size: 3.2em;
+  line-height: 1.1;
+  position: absolute;
+  place-items: center;
+  margin: 20vw;
+  border-style: dotted;
+  padding: 5vw;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  
+  display: flex;
+  width: 70%;
+  border-style: dotted;
+  position: absolute;
+  padding: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+  right: 0;
+  
+  left: 0;
+  margin: auto;
+  height: 200vw;
+}
+
+.item_1 {
+  z-index: 1;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  border-style: dotted;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  flex-basis: 25%;
+  height: 20vw;
+  background-color: #484848;
+  color: #9c9c9c;
+  opacity: 0.7;
+}
+
+.item_2 {
+  flex-wrap: wrap;
+  flex-grow: 2;
+  border-style: dotted;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  flex-basis: 10%;
+  height: 20vw;
+  
+}
+
+.item_3 {
+  flex-wrap: wrap;
+  flex-grow: 3;
+  border-style: dotted;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  flex-basis: 50%;
+  height: 20vw;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #a1a1a1;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
